@@ -1,0 +1,15 @@
+test_info= test information !!!
+hr_big= ================================
+hr_small= --------------------------------
+load_start= =======【PM】开始加载插件=======
+load_finish= =======【PM】加载插件结束=======
+loaded_success= 加载成功：
+loaded_fail= 加载失败：
+plguin_load_success= 插件加载成功！
+plguin_load_fail= 插件加载失败！
+command_not_registered= 程序错误！没有注册或处理此命令
+unload_finish= 禁用完成！
+
+
+
+

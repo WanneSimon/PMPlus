@@ -1,0 +1,11 @@
+# 语言文件
+lang=chs
+# 是否启用信息前缀，true-false，1-0
+enable_prefix=true
+# 信息前缀
+info_prefix=[PM]：
+# 普通信息、警告信息、错误信息的颜色
+info_color=§a
+warn_color=§e
+error_color=§4
+

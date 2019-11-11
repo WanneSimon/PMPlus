@@ -1,0 +1,40 @@
+name: PMPlus
+main: cc.wanforme.nukkit.PMPlus.PluginManagerPlus
+version: "1.0.0"
+# nukkit API 版本号居然更新了，funny
+api: ["1.0.9"]
+
+# 启动时加载
+load: STARTUP
+
+author: wanne
+description: 基于 nukkit 插件管理器的增强
+# to do github address
+website: 
+
+# 软依赖，加载时非必要
+softdepend: []
+# 依赖，加载时必要
+depend: []
+# 自定义前缀，暂时没发现有什么用
+#prefix: PM
+# 加载前需要加载哪些插件
+loadbefore: []
+
+
+commands: 
+  pm: 
+    description: PM 主命令
+    usage: "/pm"
+    aliases: ["PM"]
+    permission: PMPlus.command.pm
+    permission-message: "您没有权限执行 /pm 命令！"
+    
+permissions: 
+  PMPlus.command.pm: 
+    description: "pm主命令权限"
+    default: op
+#   children:
+#     PMPlus.command.pm.test:
+#       description: "Use the test feature in the example command"
+#       default: true
