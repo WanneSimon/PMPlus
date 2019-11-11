@@ -5,7 +5,8 @@
 
     注：本插件可以加载未打包插件，所以 eclipse 可以debug了，Idea 也可以通过此插件不打包debug。
     这个插件一开始就是为了解决 eclipse 不能  debug 的问题。有关eclipse 新建工程和 debug 的方式，以后有空再更。
-	同步更新：<a href="https://github.com/WanneSimon/PMPlus"> github </a> <a href="https://gitee.com/wanneme/PMPlus/tree/master"> gitee </a>
+	
+  同步更新：<a href="https://github.com/WanneSimon/PMPlus"> github </a> <a href="https://gitee.com/wanneme/PMPlus/tree/master"> gitee </a>
 #### 使用方法：
     当成普通插件，扔到 plugins 文件夹下。
     eclispe 普通工程为例： 
