@@ -25,7 +25,7 @@ loadbefore: []
 commands: 
   pm: 
     description: PM 主命令
-    usage: "/pm"
+    usage: "/pm load|unload [{plugin1},{plugin2}...]"
     aliases: ["PM"]
     permission: PMPlus.command.pm
     permission-message: "您没有权限执行 /pm 命令！"

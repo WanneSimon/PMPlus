@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import cc.wanforme.nukkit.PMPlus.PluginManagerPlus;
+import cc.wanforme.nukkit.PMPlus.loader.PMPluginLoader;
 import cc.wanforme.nukkit.PMPlus.loader.UnpackedPluginLoader;
 import cc.wanforme.nukkit.PMPlus.util.LoggerHelper;
 import cn.nukkit.Server;
@@ -62,7 +64,14 @@ public class LoadCommand extends CommandHandler{
 				Plugin plugin = this.loadPluginCoreMethod(name, pluginLoaders);
 //				Plugin plugin = server.getPluginManager().loadPlugin(pluginDir, pluginLoaders);
 				if( plugin == null) {
-					fail.append("[" + name + "] ");
+					// 交给 nukkit 自己去加载
+					plugin = PluginManagerPlus.getInstance().getServer().getPluginManager().loadPlugin(
+							PluginManagerPlus.getInstance().getServer().getPluginPath() + "/" + name + ".jar");
+					if(plugin == null) {
+						fail.append("[" + name + "] ");
+					} else {
+						success.append("[" + name + "] ");
+					}
 //					continue;
 //					LoggerHelper.sendLangError( sender, "plguin_load_fail");
 //					return false;
