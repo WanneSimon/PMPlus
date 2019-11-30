@@ -152,7 +152,13 @@ public class LoadCommand extends CommandHandler{
 	 * @return
 	 */
 	protected Plugin loadPluginCoreMethod(File pluginDir, Map<String, PluginLoader> loaders) {
-		return server.getPluginManager().loadPlugin(pluginDir, loaders);
+		// 加载
+		Plugin plugin = server.getPluginManager().loadPlugin(pluginDir, loaders); 
+		// 启用
+		if(plugin!=null) {
+			server.getPluginManager().enablePlugin(plugin);
+		}
+		return plugin;
 	}
 
 	

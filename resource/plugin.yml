@@ -1,6 +1,6 @@
 name: PMPlus
 main: cc.wanforme.nukkit.PMPlus.PluginManagerPlus
-version: "1.0.0"
+version: "1.0.2"
 # nukkit API 版本号居然更新了，funny
 api: ["1.0.9"]
 
