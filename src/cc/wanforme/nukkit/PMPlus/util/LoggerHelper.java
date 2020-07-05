@@ -31,17 +31,17 @@ public class LoggerHelper {
 	// 以下是控制台日志
 	/** 警告信息（控制台）*/
 	public static void logWarning(String msg) {
-		PluginManagerPlus.getInstance().getServer().getLogger().warning(warn_color + prefix + msg);
+		PluginManagerPlus.getInstance().getLogger().warn(warn_color + prefix + msg);
 	}
 	
 	/** 错误信息（控制台）*/
 	public static void logError(String msg) {
-		PluginManagerPlus.getInstance().getServer().getLogger().error(error_color + prefix + msg);
+		PluginManagerPlus.getInstance().getLogger().error(error_color + prefix + msg);
 	}
 	
 	/** 打印（控制台）*/
 	public static void logInfo(String msg) {
-		PluginManagerPlus.getInstance().getServer().getLogger().info(info_color + prefix + msg);
+		PluginManagerPlus.getInstance().getLogger().info(info_color + prefix + msg);
 	}
 	
 	// 以下是发送消息
@@ -82,18 +82,18 @@ public class LoggerHelper {
 	/** 警告信息（控制台）*/
 	public static void logLangWarning(String key) {
 		String msg = PluginManagerPlus.getInstance().getLangTip().getString(key, key);
-		PluginManagerPlus.getInstance().getServer().getLogger().warning(warn_color + prefix + msg);
+		PluginManagerPlus.getInstance().getLogger().warn(warn_color + prefix + msg);
 	}
 	
 	/** 打印（控制台）*/
 	public static void logLangInfo(String key) {
 		String msg = PluginManagerPlus.getInstance().getLangTip().getString(key, key);
-		PluginManagerPlus.getInstance().getServer().getLogger().info(info_color + prefix + msg);
+		PluginManagerPlus.getInstance().getLogger().info(info_color + prefix + msg);
 	}
 	/** 错误（控制台）*/
 	public static void logLangError(String key) {
 		String msg = PluginManagerPlus.getInstance().getLangTip().getString(key, key);
-		PluginManagerPlus.getInstance().getServer().getLogger().error(error_color + prefix + msg);
+		PluginManagerPlus.getInstance().getLogger().error(error_color + prefix + msg);
 	}
 
 	

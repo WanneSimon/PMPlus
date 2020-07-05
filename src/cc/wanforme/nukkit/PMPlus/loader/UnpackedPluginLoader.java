@@ -59,7 +59,10 @@ public class UnpackedPluginLoader extends PMPluginLoader{
             } catch (ClassCastException e) {
                 throw new PluginException("Error whilst initializing main class `" + description.getMain() + "'", e);
             } catch (InstantiationException | IllegalAccessException e) {
-                Server.getInstance().getLogger().logException(e);
+//                Server.getInstance().getLogger().logException(e);
+//            	PluginManagerPlus.getInstance().getLogger().error(e);
+            	// TODO ...
+            	e.printStackTrace();
             }
             
             return plugin;
