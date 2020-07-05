@@ -1,4 +1,4 @@
-# PMPlus
+# PMPlus-2.0 for nukkit-2.0 (Cloudburst Server)
 
 #### 介绍
   PMPlus 基于 nukkit 插件管理器的插件管理，实现插件动态启用和禁用。可以加载插件、禁用已加载插件、重新启用已禁用的插件。
