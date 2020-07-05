@@ -26,7 +26,7 @@ commands:
   pm: 
     description: PM 主命令
     usage: "/pm load|unload [{plugin1},{plugin2}...]"
-    aliases: ["PM"]
+#    aliases: ["PM"] # 2.0别名不再支持大写字母
     permission: PMPlus.command.pm
     permission-message: "您没有权限执行 /pm 命令！"
     
