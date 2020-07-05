@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import cc.wanforme.nukkit.PMPlus.PluginManagerPlus;
-import cc.wanforme.nukkit.PMPlus.loader.PMPluginLoader;
 import cc.wanforme.nukkit.PMPlus.loader.UnpackedPluginLoader;
 import cc.wanforme.nukkit.PMPlus.util.LoggerHelper;
 import cn.nukkit.Server;

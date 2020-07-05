@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 import cn.nukkit.Server;
-import cn.nukkit.event.plugin.PluginEnableEvent;
 import cn.nukkit.plugin.JavaPluginLoader;
 import cn.nukkit.plugin.Plugin;
 import cn.nukkit.plugin.PluginBase;

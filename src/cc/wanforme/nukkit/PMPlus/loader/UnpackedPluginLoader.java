@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.util.regex.Pattern;
 
 import cn.nukkit.Server;
-import cn.nukkit.event.HandlerList;
 import cn.nukkit.plugin.Plugin;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.plugin.PluginClassLoader;
